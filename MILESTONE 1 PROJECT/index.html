@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="MUSE Café & Bakery — coffee, conversations and inspiration in Jaipur.">
+
+    <title>Home | MUSE Café</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'media',
+
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Georgia', 'serif']
+                    },
+
+                    colors: {
+                        cream: '#F7F1E8',
+                        paper: '#FFFDF8',
+                        espresso: '#2B1B16',
+                        coffee: '#4A2C20',
+                        caramel: '#B77945',
+                        olive: '#6F7655'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Mobile / Responsive Fixes -->
+    <style>
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+        }
+
+        .hero-heading {
+            width: 100%;
+            max-width: 100%;
+            overflow-wrap: break-word;
+            word-break: normal;
+        }
+
+        .mobile-menu-button {
+            color: #2B1B16;
+            border-color: #4A2C20;
+            background-color: #FFFDF8;
+        }
+
+        .mobile-menu-button:hover {
+            background-color: #F7F1E8;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .mobile-menu-button {
+                color: #FFFFFF;
+                border-color: #FFFFFF;
+                background-color: transparent;
+            }
+
+            .mobile-menu-button:hover {
+                background-color: #2A1D18;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-heading {
+                font-size: 42px;
+                line-height: 1;
+                letter-spacing: -0.02em;
+            }
+
+            .hero-description {
+                width: 100%;
+                max-width: 100%;
+                font-size: 16px;
+                line-height: 1.7;
+            }
+
+            .hero-buttons {
+                width: 100%;
+            }
+        }
+
+        .hero-buttons {
+            width: 100% ;
+        }
+
+        .hero-buttons a {
+            width: 100% ;
+        }
+    </style>
+</head>
+
+
+<body class="bg-cream text-espresso antialiased dark:bg-[#17110e] dark:text-stone-100 overflow-x-hidden">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header
+        class="sticky top-0 z-50 border-b border-coffee/10 bg-paper/95 backdrop-blur dark:bg-[#17110e]/95">
+
+        <nav
+            class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"
+            aria-label="Primary navigation">
+
+            <!-- Logo -->
+            <a href="index.html">
+
+                <span
+                    class="block font-display text-2xl font-bold tracking-[.18em]">
+                    MUSE
+                </span>
+
+                <span
+                    class="block text-[9px] font-bold uppercase tracking-[.35em] text-caramel">
+                    Café & Bakery
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <div class="hidden items-center gap-7 md:flex">
+
+                <a
+                    href="index.html"
+                    class="font-bold text-caramel">
+                    Home
+                </a>
+
+                <a
+                    href="menu.html"
+                    class="hover:text-caramel">
+                    Menu
+                </a>
+
+                <a
+                    href="about.html"
+                    class="hover:text-caramel">
+                    About
+                </a>
+
+                <a
+                    href="gallery.html"
+                    class="hover:text-caramel">
+                    Gallery
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="hover:text-caramel">
+                    Contact
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="rounded-full bg-coffee px-5 py-2.5 text-sm font-bold text-white hover:bg-caramel">
+                    Book a Table
+                </a>
+
+            </div>
+
+            <!-- Mobile Menu -->
+
+<details class="relative md:hidden">
+    
+    <summary
+    class="cursor-pointer list-none rounded-full border border-white px-5 py-3 text-base font-bold text-white">
+    Menu
+</summary>
+
+    <div
+    class="absolute right-0 top-full z-[9999] mt-3 w-56 rounded-2xl border border-[#5a392b] !bg-[#241a15] p-3 shadow-2xl">
+
+        <a
+            href="./index.html"
+            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
+            Home
+        </a>
+
+        <a
+            href="./menu.html"
+            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
+            Menu
+        </a>
+
+        <a
+            href="./about.html"
+            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
+            About
+        </a>
+
+        <a
+            href="./gallery.html"
+            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
+            Gallery
+        </a>
+
+        <a
+            href="./contact.html"
+            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
+            Contact
+        </a>
+
+    </div>
+
+</details>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="w-full max-w-full overflow-hidden">
+
+
+        <!-- HERO -->
+
+        <section
+            class="relative isolate min-h-[82vh] w-full overflow-hidden">
+
+            <img
+                src="images/05_cafe_interior.png"
+                alt="Warmly lit interior of MUSE Café"
+                class="absolute inset-0 h-full w-full object-cover">
+
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20">
+            </div>
+
+
+            <div
+                class="relative mx-auto flex min-h-[82vh] w-full max-w-7xl items-center px-5 py-16 sm:px-6 sm:py-20">
+
+                <div class="hero-content w-full max-w-3xl min-w-0 text-white">
+
+                    <p
+                        class="text-xs font-bold uppercase tracking-[.25em] text-orange-200 sm:tracking-[.35em]">
+                        Your daily dose of inspiration...
+                    </p>
+
+
+                    <h1
+                        class="hero-heading mt-5 font-display text-[42px] font-bold leading-none sm:text-6xl md:text-7xl lg:text-8xl">
+
+                        Coffee.
+                        <br>
+
+                        Conversations.
+                        <br>
+
+                        <span class="text-orange-200">
+                            Inspiration.
+                        </span>
+
+                    </h1>
+
+
+                    <p
+                        class="hero-description mt-6 w-full max-w-xl text-base leading-7 text-stone-200 sm:text-lg sm:leading-8">
+
+                        Freshly brewed coffee, handcrafted desserts and cozy
+                        moments — all under one roof in the heart of Jaipur.
+
+                    </p>
+
+
+                    <div
+                        class="hero-buttons mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+
+                        <a
+                            href="menu.html"
+                            class="w-full rounded-full bg-white px-7 py-3.5 text-center font-bold text-coffee transition hover:-translate-y-1 sm:w-auto">
+
+                            Explore Menu
+
+                        </a>
+
+
+                        <a
+                            href="contact.html"
+                            class="w-full rounded-full border border-white/70 px-7 py-3.5 text-center font-bold text-white transition hover:bg-white/10 sm:w-auto">
+
+                            Book a Table
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- EXPERIENCE -->
+
+        <section
+            class="w-full bg-paper px-5 py-20 dark:bg-[#201713]">
+
+            <div class="mx-auto max-w-7xl">
+
+                <div class="mx-auto max-w-2xl text-center">
+
+                    <p
+                        class="text-xs font-bold uppercase tracking-[.3em] text-caramel">
+                        The MUSE experience
+                    </p>
+
+                    <h2
+                        class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        Crafted for your comfort
+                    </h2>
+
+                    <p
+                        class="mt-4 leading-7 text-stone-600 dark:text-stone-300">
+
+                        A beautiful space, thoughtful food and coffee that will
+                        make you want to stay for one more cup.
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="mt-12 grid gap-6 md:grid-cols-3">
+
+
+                    <!-- Card 1 -->
+
+                    <article
+                        class="rounded-3xl bg-cream p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+
+                        <span class="text-4xl">
+                            ☕
+                        </span>
+
+                        <h3
+                            class="mt-5 font-display text-2xl font-bold">
+                            Specialty Coffee
+                        </h3>
+
+                        <p
+                            class="mt-3 leading-7 text-stone-600 dark:text-stone-300">
+
+                            Freshly roasted beans and carefully crafted brews.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- Card 2 -->
+
+                    <article
+                        class="rounded-3xl bg-cream p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+
+                        <span class="text-4xl">
+                            🥐
+                        </span>
+
+                        <h3
+                            class="mt-5 font-display text-2xl font-bold">
+                            Fresh Bakery
+                        </h3>
+
+                        <p
+                            class="mt-3 leading-7 text-stone-600 dark:text-stone-300">
+
+                            Buttery pastries and small-batch treats prepared
+                            fresh every morning.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- Card 3 -->
+
+                    <article
+                        class="rounded-3xl bg-cream p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+
+                        <span class="text-4xl">
+                            🌿
+                        </span>
+
+                        <h3
+                            class="mt-5 font-display text-2xl font-bold">
+                            Cozy Atmosphere
+                        </h3>
+
+                        <p
+                            class="mt-3 leading-7 text-stone-600 dark:text-stone-300">
+
+                            Warm lighting and natural textures for work,
+                            conversations and unwinding.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- WHY MUSE -->
+
+        <section class="w-full px-5 py-20">
+
+            <div
+                class="mx-auto flex max-w-7xl flex-col gap-12 lg:flex-row lg:items-center">
+
+
+                <div class="w-full min-w-0 lg:w-1/2">
+
+                    <img
+                        src="images/04_three_coffees.png"
+                        alt="Sunlit seating area inside MUSE Café"
+                        class="h-[420px] w-full rounded-[2rem] object-cover shadow-2xl sm:h-[520px]">
+
+                </div>
+
+
+                <div class="w-full min-w-0 lg:w-1/2 lg:pl-8">
+
+                    <p
+                        class="text-xs font-bold uppercase tracking-[.3em] text-caramel">
+                        Why MUSE?
+                    </p>
+
+                    <h2
+                        class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        More than a café.
+                    </h2>
+
+                    <p
+                        class="mt-5 leading-8 text-stone-600 dark:text-stone-300">
+
+                        We believe the best café moments are unhurried.
+                        Every detail is designed to help you pause,
+                        connect and enjoy the little things.
+
+                    </p>
+
+
+                    <div
+                        class="mt-8 grid gap-5 sm:grid-cols-2">
+
+                        <div
+                            class="border-l-2 border-caramel pl-4">
+
+                            <h3 class="font-bold">
+                                01 — Exceptional Coffee
+                            </h3>
+
+                            <p
+                                class="mt-1 text-sm text-stone-600 dark:text-stone-300">
+                                Thoughtfully sourced beans.
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="border-l-2 border-caramel pl-4">
+
+                            <h3 class="font-bold">
+                                02 — Fresh Every Morning
+                            </h3>
+
+                            <p
+                                class="mt-1 text-sm text-stone-600 dark:text-stone-300">
+                                Pastries prepared with care.
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="border-l-2 border-caramel pl-4">
+
+                            <h3 class="font-bold">
+                                03 — Designed to Inspire
+                            </h3>
+
+                            <p
+                                class="mt-1 text-sm text-stone-600 dark:text-stone-300">
+                                A warm space for ideas.
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="border-l-2 border-caramel pl-4">
+
+                            <h3 class="font-bold">
+                                04 — Made With Care
+                            </h3>
+
+                            <p
+                                class="mt-1 text-sm text-stone-600 dark:text-stone-300">
+                                Small details, big difference.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="about.html"
+                        class="mt-8 inline-flex rounded-full bg-coffee px-6 py-3 font-bold text-white hover:-translate-y-1 hover:bg-caramel">
+
+                        Discover Our Story →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FAVOURITES -->
+
+        <section
+            class="w-full bg-paper px-5 py-20 dark:bg-[#201713]">
+
+            <div class="mx-auto max-w-7xl">
+
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+
+                    <div>
+
+                        <p
+                            class="text-xs font-bold uppercase tracking-[.3em] text-caramel">
+                            A few favourites
+                        </p>
+
+                        <h2
+                            class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                            MUSE Favourites
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="menu.html"
+                        class="text-sm font-bold text-caramel hover:underline">
+                        Full menu →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
+                    <!-- Favourite 1 -->
+
+                    <article
+                        class="group overflow-hidden rounded-3xl bg-cream dark:bg-[#2a1d18]">
+
+                        <div class="overflow-hidden">
+
+                            <img
+                                src="images/01_latte.png"
+                                alt="Caramel latte with latte art"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <div
+                                class="flex flex-col gap-2 sm:flex-row sm:justify-between sm:gap-4">
+
+                                <h3
+                                    class="font-display text-2xl font-bold">
+                                    Caramel Cloud Latte
+                                </h3>
+
+                                <span
+                                    class="font-bold text-caramel">
+                                    ₹220
+                                </span>
+
+                            </div>
+
+                            <p
+                                class="mt-2 text-sm text-stone-600 dark:text-stone-300">
+                                Espresso · steamed milk · caramel
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Favourite 2 -->
+
+                    <article
+                        class="group overflow-hidden rounded-3xl bg-cream dark:bg-[#2a1d18]">
+
+                        <div class="overflow-hidden">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85"
+                                alt="Classic tiramisu dessert"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <div
+                                class="flex flex-col gap-2 sm:flex-row sm:justify-between sm:gap-4">
+
+                                <h3
+                                    class="font-display text-2xl font-bold">
+                                    Classic Tiramisu
+                                </h3>
+
+                                <span
+                                    class="font-bold text-caramel">
+                                    ₹280
+                                </span>
+
+                            </div>
+
+                            <p
+                                class="mt-2 text-sm text-stone-600 dark:text-stone-300">
+                                Mascarpone · espresso · cocoa
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Favourite 3 -->
+
+                    <article
+                        class="group overflow-hidden rounded-3xl bg-cream dark:bg-[#2a1d18]">
+
+                        <div class="overflow-hidden">
+
+                            <img
+                                src="images/03_croissant.png"
+                                alt="Fresh golden croissant"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <div
+                                class="flex flex-col gap-2 sm:flex-row sm:justify-between sm:gap-4">
+
+                                <h3
+                                    class="font-display text-2xl font-bold">
+                                    Butter Croissant
+                                </h3>
+
+                                <span
+                                    class="font-bold text-caramel">
+                                    ₹180
+                                </span>
+
+                            </div>
+
+                            <p
+                                class="mt-2 text-sm text-stone-600 dark:text-stone-300">
+                                Flaky · buttery · freshly baked
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUOTE -->
+
+        <section
+            class="relative w-full overflow-hidden bg-coffee px-5 py-20 text-center text-white">
+
+            <img
+                src="images/06_coffee_beans.png"
+                alt="Coffee beans on a dark surface"
+                class="absolute inset-0 h-full w-full object-cover opacity-20">
+
+            <div
+                class="relative mx-auto max-w-4xl">
+
+                <p
+                    class="text-xs font-bold uppercase tracking-[.35em] text-orange-200">
+                    A little reminder
+                </p>
+
+                <blockquote
+                    class="mt-5 font-display text-4xl font-bold sm:text-6xl">
+
+                    “Life happens.
+                    <br>
+                    Coffee helps.”
+
+                </blockquote>
+
+                <p
+                    class="mt-6 text-sm uppercase tracking-[.3em] text-stone-300">
+                    MUSE Café · Jaipur
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!--                    TESTIMONIALS                    -->
+        <!-- ================================================= -->
+
+        <section
+            class="w-full bg-cream px-5 py-20 dark:bg-[#17110e]">
+
+            <div class="mx-auto max-w-7xl">
+
+
+                <!-- Heading -->
+
+                <div class="mx-auto max-w-2xl text-center">
+
+                    <p
+                        class="text-xs font-bold uppercase tracking-[.35em] text-caramel">
+                        Loved by our guests
+                    </p>
+
+                    <h2
+                        class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        Kind words from the MUSE community
+                    </h2>
+
+                    <p
+                        class="mt-5 leading-7 text-coffee dark:text-stone-300">
+
+                        Good coffee brings people together — and these
+                        are some of the little things our guests love
+                        about their time at MUSE.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Testimonial Cards -->
+
+                <div
+                    class="mt-12 grid gap-6 md:grid-cols-3">
+
+
+                    <!-- Testimonial 1 -->
+
+                    <article
+                        class="rounded-[2rem] bg-paper p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+
+                        <div
+                            class="flex gap-1 text-caramel">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <blockquote
+                            class="mt-6 font-display text-xl font-bold leading-8 text-espresso dark:text-white">
+
+                            “The atmosphere is absolutely beautiful.
+                            MUSE feels like the kind of place where
+                            you can lose track of time.”
+
+                        </blockquote>
+
+                        <div
+                            class="mt-7 flex items-center gap-4">
+
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-coffee font-bold text-white">
+                                A
+                            </div>
+
+                            <div class="min-w-0">
+
+                                <p
+                                    class="font-bold text-espresso dark:text-white">
+                                    Aanya Sharma
+                                </p>
+
+                                <p
+                                    class="text-sm text-coffee dark:text-stone-300">
+                                    Jaipur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Testimonial 2 -->
+
+                    <article
+                        class="rounded-[2rem] bg-paper p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+
+                        <div
+                            class="flex gap-1 text-caramel">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <blockquote
+                            class="mt-6 font-display text-xl font-bold leading-8 text-espresso dark:text-white">
+
+                            “The coffee, desserts and interiors
+                            are all amazing. Definitely one of my
+                            favourite places to catch up with friends.”
+
+                        </blockquote>
+
+                        <div
+                            class="mt-7 flex items-center gap-4">
+
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-olive font-bold text-white">
+                                R
+                            </div>
+
+                            <div class="min-w-0">
+
+                                <p
+                                    class="font-bold text-espresso dark:text-white">
+                                    Rohan Mehta
+                                </p>
+
+                                <p
+                                    class="text-sm text-coffee dark:text-stone-300">
+                                    Jaipur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Testimonial 3 -->
+
+                    <article
+                        class="rounded-[2rem] bg-paper p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+
+                        <div
+                            class="flex gap-1 text-caramel">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <blockquote
+                            class="mt-6 font-display text-xl font-bold leading-8 text-espresso dark:text-white">
+
+                            “A cozy little escape in the middle
+                            of the city. The latte was perfect and
+                            the whole place has such a warm vibe.”
+
+                        </blockquote>
+
+                        <div
+                            class="mt-7 flex items-center gap-4">
+
+                            <div
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-caramel font-bold text-white">
+                                S
+                            </div>
+
+                            <div class="min-w-0">
+
+                                <p
+                                    class="font-bold text-espresso dark:text-white">
+                                    Siya Kapoor
+                                </p>
+
+                                <p
+                                    class="text-sm text-coffee dark:text-stone-300">
+                                    Jaipur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA -->
+
+        <section class="w-full px-5 pb-20">
+
+            <div
+                class="mx-auto max-w-7xl rounded-[2rem] bg-olive px-6 py-14 text-center text-white sm:px-7">
+
+                <p
+                    class="text-xs font-bold uppercase tracking-[.3em]">
+                    Your table is waiting
+                </p>
+
+                <h2
+                    class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                    Ready for your next cup?
+                </h2>
+
+                <p class="mt-4">
+                    Come for the coffee. Stay for the conversations.
+                </p>
+
+                <a
+                    href="contact.html"
+                    class="mt-8 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-olive hover:-translate-y-1">
+
+                    Reserve a Table
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="w-full bg-espresso text-stone-200">
+
+        <section class="mx-auto max-w-7xl px-5 py-14">
+
+            <div
+                class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+
+                <div class="lg:col-span-2">
+
+                    <p
+                        class="font-display text-4xl font-bold tracking-[.15em] text-white">
+                        MUSE
+                    </p>
+
+                    <p
+                        class="mt-2 text-xs font-bold uppercase tracking-[.35em] text-caramel">
+                        Café & Bakery
+                    </p>
+
+                    <p
+                        class="mt-6 max-w-md leading-7 text-stone-300">
+
+                        Coffee. Conversations. Inspiration.
+                        A warm little corner of Jaipur made for
+                        slow mornings and memorable evenings.
+
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h2
+                        class="text-sm font-bold uppercase tracking-[.2em] text-white">
+                        Explore
+                    </h2>
+
+                    <ul class="mt-5 space-y-3 text-sm">
+
+                        <li>
+                            <a
+                                class="hover:text-caramel"
+                                href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="hover:text-caramel"
+                                href="menu.html">
+                                Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="hover:text-caramel"
+                                href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="hover:text-caramel"
+                                href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="hover:text-caramel"
+                                href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h2
+                        class="text-sm font-bold uppercase tracking-[.2em] text-white">
+                        Visit Us
+                    </h2>
+
+                    <address
+                        class="mt-5 space-y-3 text-sm not-italic leading-6">
+
+                        <p>
+                            C-Scheme, Jaipur
+                            <br>
+                            Rajasthan, India
+                        </p>
+
+                        <p>
+                            <a
+                                class="hover:text-caramel"
+                                href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+                        </p>
+
+                        <p>
+                            <a
+                                class="hover:text-caramel"
+                                href="mailto:hello@musecafe.in">
+                                hello@musecafe.in
+                            </a>
+                        </p>
+
+                    </address>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-stone-400 sm:flex-row sm:justify-between">
+
+                <p>
+                    © 2026 MUSE Café. All rights reserved.
+                </p>
+
+                <p>
+                    Made with love in Jaipur.
+                </p>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>
