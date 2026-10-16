@@ -12,164 +12,37 @@
     <title>Menu | MUSE Café</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            darkMode: 'media',
-
-            theme: {
-                extend: {
-                    fontFamily: {
-                        display: ['Georgia', 'serif']
-                    },
-
-                    colors: {
-                        cream: '#F7F1E8',
-                        paper: '#FFFDF8',
-                        espresso: '#2B1B16',
-                        coffee: '#4A2C20',
-                        caramel: '#B77945',
-                        olive: '#6F7655'
-                    }
-                }
-            }
-        }
-    </script>
-
 </head>
 
 
-<body class="bg-cream text-espresso antialiased dark:bg-[#17110e] dark:text-stone-100">
+<body class="bg-[#F7F1E8] text-[#2B1B16] antialiased dark:bg-[#17110e] dark:text-stone-100">
 
 
-    <!-- HEADER -->
+    
 
-    <header
-        class="sticky top-0 z-50 border-b border-coffee/10 bg-paper/95 backdrop-blur dark:bg-[#17110e]/95">
-
-        <nav
-            class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"
-            aria-label="Primary navigation">
-
-            <a href="index.html">
-
-                <span
-                    class="block font-display text-2xl font-bold tracking-[.18em]">
-                    MUSE
-                </span>
-
-                <span
-                    class="block text-[9px] font-bold uppercase tracking-[.35em] text-caramel">
-                    Café & Bakery
-                </span>
-
-            </a>
-
-
-            <div class="hidden items-center gap-7 md:flex">
-
-                <a
-                    href="index.html"
-                    class="hover:text-caramel">
-                    Home
-                </a>
-
-                <a
-                    href="menu.html"
-                    class="font-bold text-caramel">
-                    Menu
-                </a>
-
-                <a
-                    href="about.html"
-                    class="hover:text-caramel">
-                    About
-                </a>
-
-                <a
-                    href="gallery.html"
-                    class="hover:text-caramel">
-                    Gallery
-                </a>
-
-                <a
-                    href="contact.html"
-                    class="hover:text-caramel">
-                    Contact
-                </a>
-
-                <a
-                    href="contact.html"
-                    class="rounded-full bg-coffee px-5 py-2.5 text-sm font-bold text-white hover:bg-caramel">
-                    Book a Table
-                </a>
-
-            </div>
-
-
-            <!-- MOBILE MENU -->
-
-<details class="relative md:hidden">
-
-    <summary
-        class="cursor-pointer list-none rounded-full border-2 border-white px-5 py-3 text-base font-bold text-white"
-    >
-        Menu
-    </summary>
-
-    <div
-        class="absolute right-0 top-full z-[9999] mt-3 w-56 rounded-2xl border border-[#3d2921] !bg-[#241a15] p-3 shadow-2xl"
-    >
-
-        <a
-            href="./index.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]"
-        >
-            Home
-        </a>
-
-        <a
-            href="./menu.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]"
-        >
-            Menu
-        </a>
-
-        <a
-            href="./about.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]"
-        >
-            About
-        </a>
-
-        <a
-            href="./gallery.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]"
-        >
-            Gallery
-        </a>
-
-        <a
-            href="./contact.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]"
-        >
-            Contact
-        </a>
-
+    <header class="sticky top-0 z-50 border-b border-[#4A2C20]/10 bg-[#FFFDF8]/95 backdrop-blur dark:bg-[#17110e]/95">
+  <nav class="mx-auto flex max-w-7xl flex-col items-start gap-3 px-4 py-3 sm:px-5 sm:py-4 md:flex-row md:items-center md:justify-between" aria-label="Primary navigation">
+    <a href="index.html" class="shrink-0" aria-label="MUSE Café home">
+      <span class="block font-[Georgia,serif] text-2xl font-bold tracking-[.18em]">MUSE</span>
+      <span class="block text-[9px] font-bold uppercase tracking-[.35em] text-[#B77945]">Café &amp; Bakery</span>
+    </a>
+    <div class="flex w-full flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:gap-x-4 sm:text-sm md:w-auto md:flex-1 md:justify-end md:gap-x-5 lg:gap-x-7" aria-label="Page links">
+      <a href="index.html" class="rounded-md py-1 font-bold text-[#B77945]">Home</a>
+      <a href="menu.html" class="rounded-md py-1 hover:text-[#B77945]">Menu</a>
+      <a href="about.html" class="rounded-md py-1 hover:text-[#B77945]">About</a>
+      <a href="gallery.html" class="rounded-md py-1 hover:text-[#B77945]">Gallery</a>
+      <a href="contact.html" class="rounded-md py-1 hover:text-[#B77945]">Contact</a>
+      <a href="contact.html#reservation" class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#4A2C20] px-4 py-2 text-xs font-bold text-white transition hover:bg-[#B77945] sm:px-5 sm:py-2.5 sm:text-sm">Book a Table</a>
     </div>
-
-</details>
-
-        </nav>
-
-    </header>
+  </nav>
+</header>
 
 
 
     <main>
 
 
-        <!-- PAGE HERO -->
+        
 
         <section
             class="bg-coffee px-5 py-20 text-white">
@@ -200,18 +73,18 @@
 
 
 
-        <!-- MENU -->
+        
 
         <section class="px-5 py-16">
 
             <div class="mx-auto max-w-7xl">
 
 
-                <!-- Categories -->
+                
 
                 <div class="flex flex-wrap gap-3">
 
-                    <!-- COFFEE BUTTON -->
+                    
 
                     <a
                         href="#coffee"
@@ -220,7 +93,7 @@
                     </a>
 
 
-                    <!-- BREAKFAST BUTTON -->
+                    
 
                     <a
                         href="#breakfast"
@@ -229,7 +102,7 @@
                     </a>
 
 
-                    <!-- MAINS BUTTON -->
+                    
 
                     <a
                         href="#mains-section"
@@ -238,7 +111,7 @@
                     </a>
 
 
-                    <!-- DESSERTS BUTTON -->
+                    
 
                     <a
                         href="#desserts"
@@ -250,7 +123,7 @@
 
 
 
-                <!-- COFFEE -->
+                
 
                 <div
                     id="coffee"
@@ -271,7 +144,7 @@
                         class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -294,10 +167,10 @@
 
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -320,10 +193,10 @@
 
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -346,10 +219,10 @@
 
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -372,10 +245,10 @@
 
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -398,10 +271,10 @@
 
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -424,7 +297,7 @@
 
                             </p>
 
-                        </article>
+                        </div>
 
                     </div>
 
@@ -432,7 +305,7 @@
 
 
 
-                <!-- BAKERY / BREAKFAST -->
+                
 
                 <div
                     id="breakfast"
@@ -454,7 +327,7 @@
                         <div class="mt-8 space-y-4">
 
 
-                            <article
+                            <div
                                 class="flex justify-between rounded-2xl bg-paper p-5 dark:bg-[#241a15]">
 
                                 <div>
@@ -473,10 +346,10 @@
                                     ₹180
                                 </b>
 
-                            </article>
+                            </div>
 
 
-                            <article
+                            <div
                                 class="flex justify-between rounded-2xl bg-paper p-5 dark:bg-[#241a15]">
 
                                 <div>
@@ -495,10 +368,10 @@
                                     ₹320
                                 </b>
 
-                            </article>
+                            </div>
 
 
-                            <article
+                            <div
                                 class="flex justify-between rounded-2xl bg-paper p-5 dark:bg-[#241a15]">
 
                                 <div>
@@ -517,7 +390,7 @@
                                     ₹340
                                 </b>
 
-                            </article>
+                            </div>
 
                         </div>
 
@@ -533,7 +406,7 @@
 
 
 
-                                <!-- MAINS -->
+                               
 
                 <div
                     id="mains-section"
@@ -560,9 +433,9 @@
                         class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 
 
-                        <!-- MUSE SIGNATURE LATTE -->
+                        
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -584,12 +457,12 @@
                                 comforting MUSE touch.
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <!-- ROSE & VANILLA COLD BREW -->
+                        
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -611,12 +484,12 @@
                                 and sweet vanilla notes.
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <!-- CINNAMON FRENCH TOAST -->
+                        
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -638,12 +511,12 @@
                                 maple and seasonal toppings.
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <!-- TRUFFLE MUSHROOM TOAST -->
+                        
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -665,12 +538,12 @@
                                 herbs and a touch of truffle.
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <!-- ALMOND CROISSANT -->
+                        
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -692,12 +565,12 @@
                                 and topped with toasted almonds.
                             </p>
 
-                        </article>
+                        </div>
 
 
-                        <!-- SEASONAL MUSE CAKE -->
+                        
 
-                        <article
+                        <div
                             class="rounded-3xl bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-[#241a15]">
 
                             <div class="flex justify-between gap-4">
@@ -719,7 +592,7 @@
                                 the flavours of the moment.
                             </p>
 
-                        </article>
+                        </div>
 
 
                     </div>
@@ -728,7 +601,7 @@
 
 
 
-                <!-- DESSERTS -->
+                
 
                 <div
                     id="desserts"
@@ -756,7 +629,7 @@
                         <div class="mt-8 space-y-4">
 
 
-                            <article
+                            <div
                                 class="flex justify-between rounded-2xl bg-paper p-5 dark:bg-[#241a15]">
 
                                 <div>
@@ -775,10 +648,10 @@
                                     ₹280
                                 </b>
 
-                            </article>
+                            </div>
 
 
-                            <article
+                            <div
                                 class="flex justify-between rounded-2xl bg-paper p-5 dark:bg-[#241a15]">
 
                                 <div>
@@ -797,10 +670,10 @@
                                     ₹260
                                 </b>
 
-                            </article>
+                            </div>
 
 
-                            <article
+                            <div
                                 class="flex justify-between rounded-2xl bg-paper p-5 dark:bg-[#241a15]">
 
                                 <div>
@@ -819,7 +692,7 @@
                                     ₹290
                                 </b>
 
-                            </article>
+                            </div>
 
                         </div>
 
@@ -829,7 +702,7 @@
 
 
 
-                <!-- SPECIAL REQUEST -->
+                
 
                 <div
                     class="mt-20 rounded-[2rem] bg-olive p-10 text-white">
@@ -846,7 +719,7 @@
 
                     <a
                         href="contact.html"
-                        class="mt-6 inline-flex rounded-full bg-white px-6 py-3 font-bold text-olive">
+                        class="mt-6 inline-flex rounded-full bg-white px-6 py-3 font-bold text-brown">
 
                         Contact MUSE
 
@@ -862,7 +735,7 @@
 
 
 
-    <!-- FOOTER -->
+    
 
     <footer class="bg-espresso text-stone-200">
 

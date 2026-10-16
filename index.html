@@ -10,245 +10,42 @@
 
     <title>Home | MUSE Café</title>
 
-    <!-- Tailwind CSS -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            darkMode: 'media',
-
-            theme: {
-                extend: {
-                    fontFamily: {
-                        display: ['Georgia', 'serif']
-                    },
-
-                    colors: {
-                        cream: '#F7F1E8',
-                        paper: '#FFFDF8',
-                        espresso: '#2B1B16',
-                        coffee: '#4A2C20',
-                        caramel: '#B77945',
-                        olive: '#6F7655'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Mobile / Responsive Fixes -->
-    <style>
-        html,
-        body {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        .hero-content {
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-        }
-
-        .hero-heading {
-            width: 100%;
-            max-width: 100%;
-            overflow-wrap: break-word;
-            word-break: normal;
-        }
-
-        .mobile-menu-button {
-            color: #2B1B16;
-            border-color: #4A2C20;
-            background-color: #FFFDF8;
-        }
-
-        .mobile-menu-button:hover {
-            background-color: #F7F1E8;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .mobile-menu-button {
-                color: #FFFFFF;
-                border-color: #FFFFFF;
-                background-color: transparent;
-            }
-
-            .mobile-menu-button:hover {
-                background-color: #2A1D18;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero-heading {
-                font-size: 42px;
-                line-height: 1;
-                letter-spacing: -0.02em;
-            }
-
-            .hero-description {
-                width: 100%;
-                max-width: 100%;
-                font-size: 16px;
-                line-height: 1.7;
-            }
-
-            .hero-buttons {
-                width: 100%;
-            }
-        }
-
-        .hero-buttons {
-            width: 100% ;
-        }
-
-        .hero-buttons a {
-            width: 100% ;
-        }
-    </style>
 </head>
 
 
-<body class="bg-cream text-espresso antialiased dark:bg-[#17110e] dark:text-stone-100 overflow-x-hidden">
+<body class="bg-[#F7F1E8] text-[#2B1B16] antialiased dark:bg-[#17110e] dark:text-stone-100 overflow-x-hidden">
 
 
-    <!-- ================= HEADER ================= -->
-
-    <header
-        class="sticky top-0 z-50 border-b border-coffee/10 bg-paper/95 backdrop-blur dark:bg-[#17110e]/95">
-
-        <nav
-            class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"
-            aria-label="Primary navigation">
-
-            <!-- Logo -->
-            <a href="index.html">
-
-                <span
-                    class="block font-display text-2xl font-bold tracking-[.18em]">
-                    MUSE
-                </span>
-
-                <span
-                    class="block text-[9px] font-bold uppercase tracking-[.35em] text-caramel">
-                    Café & Bakery
-                </span>
-
-            </a>
-
-
-            <!-- Desktop Navigation -->
-
-            <div class="hidden items-center gap-7 md:flex">
-
-                <a
-                    href="index.html"
-                    class="font-bold text-caramel">
-                    Home
-                </a>
-
-                <a
-                    href="menu.html"
-                    class="hover:text-caramel">
-                    Menu
-                </a>
-
-                <a
-                    href="about.html"
-                    class="hover:text-caramel">
-                    About
-                </a>
-
-                <a
-                    href="gallery.html"
-                    class="hover:text-caramel">
-                    Gallery
-                </a>
-
-                <a
-                    href="contact.html"
-                    class="hover:text-caramel">
-                    Contact
-                </a>
-
-                <a
-                    href="contact.html"
-                    class="rounded-full bg-coffee px-5 py-2.5 text-sm font-bold text-white hover:bg-caramel">
-                    Book a Table
-                </a>
-
-            </div>
-
-            <!-- Mobile Menu -->
-
-<details class="relative md:hidden">
     
-    <summary
-    class="cursor-pointer list-none rounded-full border border-white px-5 py-3 text-base font-bold text-white">
-    Menu
-</summary>
 
-    <div
-    class="absolute right-0 top-full z-[9999] mt-3 w-56 rounded-2xl border border-[#5a392b] !bg-[#241a15] p-3 shadow-2xl">
-
-        <a
-            href="./index.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
-            Home
-        </a>
-
-        <a
-            href="./menu.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
-            Menu
-        </a>
-
-        <a
-            href="./about.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
-            About
-        </a>
-
-        <a
-            href="./gallery.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
-            Gallery
-        </a>
-
-        <a
-            href="./contact.html"
-            class="block rounded-xl px-4 py-3 text-white hover:bg-[#4f2f22]">
-            Contact
-        </a>
-
+    <header class="sticky top-0 z-50 border-b border-[#4A2C20]/10 bg-[#FFFDF8]/95 backdrop-blur dark:bg-[#17110e]/95">
+  <nav class="mx-auto flex max-w-7xl flex-col items-start gap-3 px-4 py-3 sm:px-5 sm:py-4 md:flex-row md:items-center md:justify-between" aria-label="Primary navigation">
+    <a href="index.html" class="shrink-0" aria-label="MUSE Café home">
+      <span class="block font-[Georgia,serif] text-2xl font-bold tracking-[.18em]">MUSE</span>
+      <span class="block text-[9px] font-bold uppercase tracking-[.35em] text-[#B77945]">Café &amp; Bakery</span>
+    </a>
+    <div class="flex w-full flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:gap-x-4 sm:text-sm md:w-auto md:flex-1 md:justify-end md:gap-x-5 lg:gap-x-7" aria-label="Page links">
+      <a href="index.html" class="rounded-md py-1 font-bold text-[#B77945]">Home</a>
+      <a href="menu.html" class="rounded-md py-1 hover:text-[#B77945]">Menu</a>
+      <a href="about.html" class="rounded-md py-1 hover:text-[#B77945]">About</a>
+      <a href="gallery.html" class="rounded-md py-1 hover:text-[#B77945]">Gallery</a>
+      <a href="contact.html" class="rounded-md py-1 hover:text-[#B77945]">Contact</a>
+      <a href="contact.html#reservation" class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#4A2C20] px-4 py-2 text-xs font-bold text-white transition hover:bg-[#B77945] sm:px-5 sm:py-2.5 sm:text-sm">Book a Table</a>
     </div>
-
-</details>
-
-        </nav>
-
-    </header>
+  </nav>
+</header>
 
 
 
-    <!-- ================= MAIN ================= -->
+    
 
     <main class="w-full max-w-full overflow-hidden">
 
 
-        <!-- HERO -->
+        
 
         <section
             class="relative isolate min-h-[82vh] w-full overflow-hidden">
@@ -266,7 +63,7 @@
             <div
                 class="relative mx-auto flex min-h-[82vh] w-full max-w-7xl items-center px-5 py-16 sm:px-6 sm:py-20">
 
-                <div class="hero-content w-full max-w-3xl min-w-0 text-white">
+                <div class="w-full min-w-0 max-w-3xl text-white">
 
                     <p
                         class="text-xs font-bold uppercase tracking-[.25em] text-orange-200 sm:tracking-[.35em]">
@@ -275,7 +72,7 @@
 
 
                     <h1
-                        class="hero-heading mt-5 font-display text-[42px] font-bold leading-none sm:text-6xl md:text-7xl lg:text-8xl">
+                        class="mt-5 break-words font-[Georgia,serif] text-[42px] font-bold leading-none tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
 
                         Coffee.
                         <br>
@@ -291,7 +88,7 @@
 
 
                     <p
-                        class="hero-description mt-6 w-full max-w-xl text-base leading-7 text-stone-200 sm:text-lg sm:leading-8">
+                        class="mt-6 w-full max-w-full text-base leading-7 text-stone-200 sm:max-w-xl sm:text-lg sm:leading-8">
 
                         Freshly brewed coffee, handcrafted desserts and cozy
                         moments — all under one roof in the heart of Jaipur.
@@ -300,11 +97,11 @@
 
 
                     <div
-                        class="hero-buttons mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+                        class="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
 
                         <a
                             href="menu.html"
-                            class="w-full rounded-full bg-white px-7 py-3.5 text-center font-bold text-coffee transition hover:-translate-y-1 sm:w-auto">
+                            class="w-full rounded-full bg-white px-7 py-3.5 text-center font-bold text-[#4A2C20] transition hover:-translate-y-1 sm:w-auto">
 
                             Explore Menu
 
@@ -329,22 +126,22 @@
 
 
 
-        <!-- EXPERIENCE -->
+        
 
         <section
-            class="w-full bg-paper px-5 py-20 dark:bg-[#201713]">
+            class="w-full bg-[#FFFDF8] px-5 py-20 dark:bg-[#201713]">
 
             <div class="mx-auto max-w-7xl">
 
                 <div class="mx-auto max-w-2xl text-center">
 
                     <p
-                        class="text-xs font-bold uppercase tracking-[.3em] text-caramel">
+                        class="text-xs font-bold uppercase tracking-[.3em] text-[#B77945]">
                         The MUSE experience
                     </p>
 
                     <h2
-                        class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        class="mt-3 font-[Georgia,serif] text-4xl font-bold sm:text-5xl">
                         Crafted for your comfort
                     </h2>
 
@@ -363,17 +160,17 @@
                     class="mt-12 grid gap-6 md:grid-cols-3">
 
 
-                    <!-- Card 1 -->
+                    
 
-                    <article
-                        class="rounded-3xl bg-cream p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+                    <div
+                        class="rounded-3xl bg-[#F7F1E8] p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
 
                         <span class="text-4xl">
                             ☕
                         </span>
 
                         <h3
-                            class="mt-5 font-display text-2xl font-bold">
+                            class="mt-5 font-[Georgia,serif] text-2xl font-bold">
                             Specialty Coffee
                         </h3>
 
@@ -384,20 +181,20 @@
 
                         </p>
 
-                    </article>
+                    </div>
 
 
-                    <!-- Card 2 -->
+                    
 
-                    <article
-                        class="rounded-3xl bg-cream p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+                    <div
+                        class="rounded-3xl bg-[#F7F1E8] p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
 
                         <span class="text-4xl">
                             🥐
                         </span>
 
                         <h3
-                            class="mt-5 font-display text-2xl font-bold">
+                            class="mt-5 font-[Georgia,serif] text-2xl font-bold">
                             Fresh Bakery
                         </h3>
 
@@ -409,20 +206,20 @@
 
                         </p>
 
-                    </article>
+                    </div>
 
 
-                    <!-- Card 3 -->
+                    
 
-                    <article
-                        class="rounded-3xl bg-cream p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+                    <div
+                        class="rounded-3xl bg-[#F7F1E8] p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
 
                         <span class="text-4xl">
                             🌿
                         </span>
 
                         <h3
-                            class="mt-5 font-display text-2xl font-bold">
+                            class="mt-5 font-[Georgia,serif] text-2xl font-bold">
                             Cozy Atmosphere
                         </h3>
 
@@ -434,7 +231,7 @@
 
                         </p>
 
-                    </article>
+                    </div>
 
                 </div>
 
@@ -444,7 +241,7 @@
 
 
 
-        <!-- WHY MUSE -->
+        
 
         <section class="w-full px-5 py-20">
 
@@ -465,12 +262,12 @@
                 <div class="w-full min-w-0 lg:w-1/2 lg:pl-8">
 
                     <p
-                        class="text-xs font-bold uppercase tracking-[.3em] text-caramel">
+                        class="text-xs font-bold uppercase tracking-[.3em] text-[#B77945]">
                         Why MUSE?
                     </p>
 
                     <h2
-                        class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        class="mt-3 font-[Georgia,serif] text-4xl font-bold sm:text-5xl">
                         More than a café.
                     </h2>
 
@@ -488,7 +285,7 @@
                         class="mt-8 grid gap-5 sm:grid-cols-2">
 
                         <div
-                            class="border-l-2 border-caramel pl-4">
+                            class="border-l-2 border-[#B77945] pl-4">
 
                             <h3 class="font-bold">
                                 01 — Exceptional Coffee
@@ -503,7 +300,7 @@
 
 
                         <div
-                            class="border-l-2 border-caramel pl-4">
+                            class="border-l-2 border-[#B77945] pl-4">
 
                             <h3 class="font-bold">
                                 02 — Fresh Every Morning
@@ -518,7 +315,7 @@
 
 
                         <div
-                            class="border-l-2 border-caramel pl-4">
+                            class="border-l-2 border-[#B77945] pl-4">
 
                             <h3 class="font-bold">
                                 03 — Designed to Inspire
@@ -533,7 +330,7 @@
 
 
                         <div
-                            class="border-l-2 border-caramel pl-4">
+                            class="border-l-2 border-[#B77945] pl-4">
 
                             <h3 class="font-bold">
                                 04 — Made With Care
@@ -551,7 +348,7 @@
 
                     <a
                         href="about.html"
-                        class="mt-8 inline-flex rounded-full bg-coffee px-6 py-3 font-bold text-white hover:-translate-y-1 hover:bg-caramel">
+                        class="mt-8 inline-flex rounded-full bg-[#4A2C20] px-6 py-3 font-bold text-white hover:-translate-y-1 hover:bg-[#B77945]">
 
                         Discover Our Story →
 
@@ -565,10 +362,10 @@
 
 
 
-        <!-- FAVOURITES -->
+        
 
         <section
-            class="w-full bg-paper px-5 py-20 dark:bg-[#201713]">
+            class="w-full bg-[#FFFDF8] px-5 py-20 dark:bg-[#201713]">
 
             <div class="mx-auto max-w-7xl">
 
@@ -577,12 +374,12 @@
                     <div>
 
                         <p
-                            class="text-xs font-bold uppercase tracking-[.3em] text-caramel">
+                            class="text-xs font-bold uppercase tracking-[.3em] text-[#B77945]">
                             A few favourites
                         </p>
 
                         <h2
-                            class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                            class="mt-3 font-[Georgia,serif] text-4xl font-bold sm:text-5xl">
                             MUSE Favourites
                         </h2>
 
@@ -590,7 +387,7 @@
 
                     <a
                         href="menu.html"
-                        class="text-sm font-bold text-caramel hover:underline">
+                        class="text-sm font-bold text-[#B77945] hover:underline">
                         Full menu →
                     </a>
 
@@ -601,10 +398,10 @@
                     class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
 
-                    <!-- Favourite 1 -->
+                    
 
-                    <article
-                        class="group overflow-hidden rounded-3xl bg-cream dark:bg-[#2a1d18]">
+                    <div
+                        class="group overflow-hidden rounded-3xl bg-[#F7F1E8] dark:bg-[#2a1d18]">
 
                         <div class="overflow-hidden">
 
@@ -621,12 +418,12 @@
                                 class="flex flex-col gap-2 sm:flex-row sm:justify-between sm:gap-4">
 
                                 <h3
-                                    class="font-display text-2xl font-bold">
+                                    class="font-[Georgia,serif] text-2xl font-bold">
                                     Caramel Cloud Latte
                                 </h3>
 
                                 <span
-                                    class="font-bold text-caramel">
+                                    class="font-bold text-[#B77945]">
                                     ₹220
                                 </span>
 
@@ -639,13 +436,13 @@
 
                         </div>
 
-                    </article>
+                    </div>
 
 
-                    <!-- Favourite 2 -->
+                    
 
-                    <article
-                        class="group overflow-hidden rounded-3xl bg-cream dark:bg-[#2a1d18]">
+                    <div
+                        class="group overflow-hidden rounded-3xl bg-[#F7F1E8] dark:bg-[#2a1d18]">
 
                         <div class="overflow-hidden">
 
@@ -662,12 +459,12 @@
                                 class="flex flex-col gap-2 sm:flex-row sm:justify-between sm:gap-4">
 
                                 <h3
-                                    class="font-display text-2xl font-bold">
+                                    class="font-[Georgia,serif] text-2xl font-bold">
                                     Classic Tiramisu
                                 </h3>
 
                                 <span
-                                    class="font-bold text-caramel">
+                                    class="font-bold text-[#B77945]">
                                     ₹280
                                 </span>
 
@@ -680,13 +477,13 @@
 
                         </div>
 
-                    </article>
+                    </div>
 
 
-                    <!-- Favourite 3 -->
+                    
 
-                    <article
-                        class="group overflow-hidden rounded-3xl bg-cream dark:bg-[#2a1d18]">
+                    <div
+                        class="group overflow-hidden rounded-3xl bg-[#F7F1E8] dark:bg-[#2a1d18]">
 
                         <div class="overflow-hidden">
 
@@ -703,12 +500,12 @@
                                 class="flex flex-col gap-2 sm:flex-row sm:justify-between sm:gap-4">
 
                                 <h3
-                                    class="font-display text-2xl font-bold">
+                                    class="font-[Georgia,serif] text-2xl font-bold">
                                     Butter Croissant
                                 </h3>
 
                                 <span
-                                    class="font-bold text-caramel">
+                                    class="font-bold text-[#B77945]">
                                     ₹180
                                 </span>
 
@@ -721,7 +518,7 @@
 
                         </div>
 
-                    </article>
+                    </div>
 
                 </div>
 
@@ -731,10 +528,10 @@
 
 
 
-        <!-- QUOTE -->
+        
 
         <section
-            class="relative w-full overflow-hidden bg-coffee px-5 py-20 text-center text-white">
+            class="relative w-full overflow-hidden bg-[#4A2C20] px-5 py-20 text-center text-white">
 
             <img
                 src="images/06_coffee_beans.png"
@@ -749,14 +546,14 @@
                     A little reminder
                 </p>
 
-                <blockquote
-                    class="mt-5 font-display text-4xl font-bold sm:text-6xl">
+                <p
+                    class="mt-5 font-[Georgia,serif] text-4xl font-bold sm:text-6xl">
 
                     “Life happens.
                     <br>
                     Coffee helps.”
 
-                </blockquote>
+                </p>
 
                 <p
                     class="mt-6 text-sm uppercase tracking-[.3em] text-stone-300">
@@ -769,32 +566,30 @@
 
 
 
-        <!-- ================================================= -->
-        <!--                    TESTIMONIALS                    -->
-        <!-- ================================================= -->
+        
 
         <section
-            class="w-full bg-cream px-5 py-20 dark:bg-[#17110e]">
+            class="w-full bg-[#F7F1E8] px-5 py-20 dark:bg-[#17110e]">
 
             <div class="mx-auto max-w-7xl">
 
 
-                <!-- Heading -->
+                
 
                 <div class="mx-auto max-w-2xl text-center">
 
                     <p
-                        class="text-xs font-bold uppercase tracking-[.35em] text-caramel">
+                        class="text-xs font-bold uppercase tracking-[.35em] text-[#B77945]">
                         Loved by our guests
                     </p>
 
                     <h2
-                        class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                        class="mt-3 font-[Georgia,serif] text-4xl font-bold sm:text-5xl">
                         Kind words from the MUSE community
                     </h2>
 
                     <p
-                        class="mt-5 leading-7 text-coffee dark:text-stone-300">
+                        class="mt-5 leading-7 text-[#4A2C20] dark:text-stone-300">
 
                         Good coffee brings people together — and these
                         are some of the little things our guests love
@@ -806,48 +601,48 @@
 
 
 
-                <!-- Testimonial Cards -->
+                
 
                 <div
                     class="mt-12 grid gap-6 md:grid-cols-3">
 
 
-                    <!-- Testimonial 1 -->
+                    
 
-                    <article
-                        class="rounded-[2rem] bg-paper p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+                    <div
+                        class="rounded-[2rem] bg-[#FFFDF8] p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
 
                         <div
-                            class="flex gap-1 text-caramel">
+                            class="flex gap-1 text-[#B77945]">
                             ★ ★ ★ ★ ★
                         </div>
 
-                        <blockquote
-                            class="mt-6 font-display text-xl font-bold leading-8 text-espresso dark:text-white">
+                        <p
+                            class="mt-6 font-[Georgia,serif] text-xl font-bold leading-8 text-[#2B1B16] dark:text-white">
 
                             “The atmosphere is absolutely beautiful.
                             MUSE feels like the kind of place where
                             you can lose track of time.”
 
-                        </blockquote>
+                        </p>
 
                         <div
                             class="mt-7 flex items-center gap-4">
 
                             <div
-                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-coffee font-bold text-white">
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#4A2C20] font-bold text-white">
                                 A
                             </div>
 
                             <div class="min-w-0">
 
                                 <p
-                                    class="font-bold text-espresso dark:text-white">
+                                    class="font-bold text-[#2B1B16] dark:text-white">
                                     Aanya Sharma
                                 </p>
 
                                 <p
-                                    class="text-sm text-coffee dark:text-stone-300">
+                                    class="text-sm text-[#4A2C20] dark:text-stone-300">
                                     Jaipur
                                 </p>
 
@@ -855,46 +650,46 @@
 
                         </div>
 
-                    </article>
+                    </div>
 
 
 
-                    <!-- Testimonial 2 -->
+                    
 
-                    <article
-                        class="rounded-[2rem] bg-paper p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+                    <div
+                        class="rounded-[2rem] bg-[#FFFDF8] p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
 
                         <div
-                            class="flex gap-1 text-caramel">
+                            class="flex gap-1 text-[#B77945]">
                             ★ ★ ★ ★ ★
                         </div>
 
-                        <blockquote
-                            class="mt-6 font-display text-xl font-bold leading-8 text-espresso dark:text-white">
+                        <p
+                            class="mt-6 font-[Georgia,serif] text-xl font-bold leading-8 text-[#2B1B16] dark:text-white">
 
                             “The coffee, desserts and interiors
                             are all amazing. Definitely one of my
                             favourite places to catch up with friends.”
 
-                        </blockquote>
+                        </p>
 
                         <div
                             class="mt-7 flex items-center gap-4">
 
                             <div
-                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-olive font-bold text-white">
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#6F7655] font-bold text-white">
                                 R
                             </div>
 
                             <div class="min-w-0">
 
                                 <p
-                                    class="font-bold text-espresso dark:text-white">
+                                    class="font-bold text-[#2B1B16] dark:text-white">
                                     Rohan Mehta
                                 </p>
 
                                 <p
-                                    class="text-sm text-coffee dark:text-stone-300">
+                                    class="text-sm text-[#4A2C20] dark:text-stone-300">
                                     Jaipur
                                 </p>
 
@@ -902,46 +697,46 @@
 
                         </div>
 
-                    </article>
+                    </div>
 
 
 
-                    <!-- Testimonial 3 -->
+                    
 
-                    <article
-                        class="rounded-[2rem] bg-paper p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
+                    <div
+                        class="rounded-[2rem] bg-[#FFFDF8] p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-[#2a1d18]">
 
                         <div
-                            class="flex gap-1 text-caramel">
+                            class="flex gap-1 text-[#B77945]">
                             ★ ★ ★ ★ ★
                         </div>
 
-                        <blockquote
-                            class="mt-6 font-display text-xl font-bold leading-8 text-espresso dark:text-white">
+                        <p
+                            class="mt-6 font-[Georgia,serif] text-xl font-bold leading-8 text-[#2B1B16] dark:text-white">
 
                             “A cozy little escape in the middle
                             of the city. The latte was perfect and
                             the whole place has such a warm vibe.”
 
-                        </blockquote>
+                        </p>
 
                         <div
                             class="mt-7 flex items-center gap-4">
 
                             <div
-                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-caramel font-bold text-white">
+                                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#B77945] font-bold text-white">
                                 S
                             </div>
 
                             <div class="min-w-0">
 
                                 <p
-                                    class="font-bold text-espresso dark:text-white">
+                                    class="font-bold text-[#2B1B16] dark:text-white">
                                     Siya Kapoor
                                 </p>
 
                                 <p
-                                    class="text-sm text-coffee dark:text-stone-300">
+                                    class="text-sm text-[#4A2C20] dark:text-stone-300">
                                     Jaipur
                                 </p>
 
@@ -949,7 +744,7 @@
 
                         </div>
 
-                    </article>
+                    </div>
 
                 </div>
 
@@ -959,12 +754,12 @@
 
 
 
-        <!-- CTA -->
+        
 
         <section class="w-full px-5 pb-20">
 
             <div
-                class="mx-auto max-w-7xl rounded-[2rem] bg-olive px-6 py-14 text-center text-white sm:px-7">
+                class="mx-auto max-w-7xl rounded-[2rem] bg-[#6F7655] px-6 py-14 text-center text-white sm:px-7">
 
                 <p
                     class="text-xs font-bold uppercase tracking-[.3em]">
@@ -972,7 +767,7 @@
                 </p>
 
                 <h2
-                    class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+                    class="mt-3 font-[Georgia,serif] text-4xl font-bold sm:text-5xl">
                     Ready for your next cup?
                 </h2>
 
@@ -982,7 +777,7 @@
 
                 <a
                     href="contact.html"
-                    class="mt-8 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-olive hover:-translate-y-1">
+                    class="mt-8 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-[#6F7655] hover:-translate-y-1">
 
                     Reserve a Table
 
@@ -996,9 +791,9 @@
 
 
 
-    <!-- ================= FOOTER ================= -->
+    
 
-    <footer class="w-full bg-espresso text-stone-200">
+    <footer class="w-full bg-[#2B1B16] text-stone-200">
 
         <section class="mx-auto max-w-7xl px-5 py-14">
 
@@ -1009,12 +804,12 @@
                 <div class="lg:col-span-2">
 
                     <p
-                        class="font-display text-4xl font-bold tracking-[.15em] text-white">
+                        class="font-[Georgia,serif] text-4xl font-bold tracking-[.15em] text-white">
                         MUSE
                     </p>
 
                     <p
-                        class="mt-2 text-xs font-bold uppercase tracking-[.35em] text-caramel">
+                        class="mt-2 text-xs font-bold uppercase tracking-[.35em] text-[#B77945]">
                         Café & Bakery
                     </p>
 
@@ -1041,7 +836,7 @@
 
                         <li>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="index.html">
                                 Home
                             </a>
@@ -1049,7 +844,7 @@
 
                         <li>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="menu.html">
                                 Menu
                             </a>
@@ -1057,7 +852,7 @@
 
                         <li>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="about.html">
                                 About
                             </a>
@@ -1065,7 +860,7 @@
 
                         <li>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="gallery.html">
                                 Gallery
                             </a>
@@ -1073,7 +868,7 @@
 
                         <li>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="contact.html">
                                 Contact
                             </a>
@@ -1102,7 +897,7 @@
 
                         <p>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="tel:+919876543210">
                                 +91 98765 43210
                             </a>
@@ -1110,7 +905,7 @@
 
                         <p>
                             <a
-                                class="hover:text-caramel"
+                                class="hover:text-[#B77945]"
                                 href="mailto:hello@musecafe.in">
                                 hello@musecafe.in
                             </a>

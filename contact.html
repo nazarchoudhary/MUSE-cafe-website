@@ -18,162 +18,38 @@
   <title>Contact | MUSE Café</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <script>
-    tailwind.config = {
-      darkMode: 'media',
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['Georgia', 'serif']
-          },
-
-          colors: {
-            cream: '#F7F1E8',
-            paper: '#FFFDF8',
-            espresso: '#2B1B16',
-            coffee: '#4A2C20',
-            caramel: '#B77945',
-            olive: '#6F7655'
-          }
-        }
-      }
-    }
-  </script>
-
 </head>
 
 
 <body class="bg-cream text-espresso antialiased dark:bg-[#17110e] dark:text-stone-100">
 
 
-  <!-- HEADER -->
+  
 
-  <header
-    class="sticky top-0 z-50 border-b border-coffee/10 bg-paper/95 backdrop-blur dark:bg-[#17110e]/95"
-  >
-
-    <nav
-      class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"
-      aria-label="Primary navigation"
-    >
-
-      <a href="index.html">
-
-        <span class="block font-display text-2xl font-bold tracking-[.18em]">
-          MUSE
-        </span>
-
-        <span
-          class="block text-[9px] font-bold uppercase tracking-[.35em] text-caramel"
-        >
-          Café & Bakery
-        </span>
-
-      </a>
+  <header class="sticky top-0 z-50 border-b border-[#4A2C20]/10 bg-[#FFFDF8]/95 backdrop-blur dark:bg-[#17110e]/95">
+  <nav class="mx-auto flex max-w-7xl flex-col items-start gap-3 px-4 py-3 sm:px-5 sm:py-4 md:flex-row md:items-center md:justify-between" aria-label="Primary navigation">
+    <a href="index.html" class="shrink-0" aria-label="MUSE Café home">
+      <span class="block font-[Georgia,serif] text-2xl font-bold tracking-[.18em]">MUSE</span>
+      <span class="block text-[9px] font-bold uppercase tracking-[.35em] text-[#B77945]">Café &amp; Bakery</span>
+    </a>
+    <div class="flex w-full flex-wrap items-center gap-x-3 gap-y-2 text-xs sm:gap-x-4 sm:text-sm md:w-auto md:flex-1 md:justify-end md:gap-x-5 lg:gap-x-7" aria-label="Page links">
+      <a href="index.html" class="rounded-md py-1 font-bold text-[#B77945]">Home</a>
+      <a href="menu.html" class="rounded-md py-1 hover:text-[#B77945]">Menu</a>
+      <a href="about.html" class="rounded-md py-1 hover:text-[#B77945]">About</a>
+      <a href="gallery.html" class="rounded-md py-1 hover:text-[#B77945]">Gallery</a>
+      <a href="contact.html" class="rounded-md py-1 hover:text-[#B77945]">Contact</a>
+      <a href="contact.html#reservation" class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#4A2C20] px-4 py-2 text-xs font-bold text-white transition hover:bg-[#B77945] sm:px-5 sm:py-2.5 sm:text-sm">Book a Table</a>
+    </div>
+  </nav>
+</header>
 
 
-      <!-- DESKTOP NAVIGATION -->
-
-      <div class="hidden items-center gap-7 md:flex">
-
-        <a href="index.html" class="hover:text-caramel">
-          Home
-        </a>
-
-        <a href="menu.html" class="hover:text-caramel">
-          Menu
-        </a>
-
-        <a href="about.html" class="hover:text-caramel">
-          About
-        </a>
-
-        <a href="gallery.html" class="hover:text-caramel">
-          Gallery
-        </a>
-
-        <a
-          href="contact.html"
-          class="font-bold text-caramel"
-          aria-current="page"
-        >
-          Contact
-        </a>
-
-        <a
-          href="#reservation"
-          class="rounded-full bg-coffee px-5 py-2.5 text-sm font-bold text-white hover:bg-caramel"
-        >
-          Book a Table
-        </a>
-
-      </div>
-
-
-      <!-- MOBILE MENU -->
-
-      <details class="relative md:hidden">
-
-        <summary
-  class="cursor-pointer list-none rounded-full border-2 border-coffee px-5 py-3 text-base font-bold text-coffee hover:bg-cream">
-  Contact
-</summary>
-
-        <div
-          class="absolute right-0 mt-3 w-52 rounded-2xl bg-paper p-3 shadow-xl dark:bg-[#241a15]"
-        >
-
-          <a
-            class="block rounded-xl p-3 hover:bg-cream"
-            href="index.html"
-          >
-            Home
-          </a>
-
-          <a
-            class="block rounded-xl p-3 hover:bg-cream"
-            href="menu.html"
-          >
-            Menu
-          </a>
-
-          <a
-            class="block rounded-xl p-3 hover:bg-cream"
-            href="about.html"
-          >
-            About
-          </a>
-
-          <a
-            class="block rounded-xl p-3 hover:bg-cream"
-            href="gallery.html"
-          >
-            Gallery
-          </a>
-
-          <a
-            class="block rounded-xl p-3 hover:bg-cream"
-            href="contact.html"
-          >
-            Contact
-          </a>
-
-        </div>
-
-      </details>
-
-    </nav>
-
-  </header>
-
-
-  <!-- MAIN -->
+  
 
   <main>
 
 
-    <!-- HERO -->
+    
 
     <section class="bg-coffee px-5 py-20 text-white">
 
@@ -203,7 +79,7 @@
     </section>
 
 
-    <!-- CONTACT + FORM -->
+    
 
     <section class="px-5 py-16">
 
@@ -212,7 +88,7 @@
       >
 
 
-        <!-- CONTACT INFORMATION -->
+        
 
         <div class="lg:col-span-2">
 
@@ -237,7 +113,7 @@
               class="mt-7 space-y-6 not-italic leading-7"
             >
 
-              <!-- ADDRESS -->
+              
 
               <div>
 
@@ -254,7 +130,7 @@
               </div>
 
 
-              <!-- OPENING HOURS -->
+              
 
               <div>
 
@@ -271,7 +147,7 @@
               </div>
 
 
-              <!-- CONTACT -->
+              
 
               <div>
 
@@ -306,24 +182,24 @@
           </div>
 
 
-          <!-- MAP -->
+          
 
           <div class="mt-6 overflow-hidden rounded-[2rem]">
 
-            <iframe
+            <a>
               title="MUSE Café location map"
               src="https://www.google.com/maps?q=C-Scheme%2C%20Jaipur%2C%20Rajasthan&output=embed"
               class="h-80 w-full border-0"
               loading="lazy"
               allowfullscreen
-            ></iframe>
+            </a>
 
           </div>
 
         </div>
 
 
-        <!-- FORM -->
+        
 
         <div
           id="reservation"
@@ -352,7 +228,7 @@
             <div class="mt-8 grid gap-6 sm:grid-cols-2">
 
 
-              <!-- NAME -->
+              
 
               <div>
 
@@ -376,7 +252,7 @@
               </div>
 
 
-              <!-- PHONE -->
+              
 
               <div>
 
@@ -394,13 +270,13 @@
                   autocomplete="tel"
                   required
                   class="mt-2 w-full rounded-xl border border-coffee/20 bg-cream px-4 py-3 text-espresso placeholder:text-coffee/60 outline-none focus:border-caramel focus:ring-2 focus:ring-caramel/20"
-                  placeholder="+91 98765 43210"
+                  placeholder="Enter your phone number"
                 >
 
               </div>
 
 
-              <!-- EMAIL -->
+              
 
               <div>
 
@@ -423,7 +299,7 @@
               </div>
 
 
-              <!-- SERVICE DROPDOWN -->
+              
 
               <div>
 
@@ -470,7 +346,7 @@
               </div>
 
 
-              <!-- DATE -->
+              
 
               <div>
 
@@ -491,7 +367,7 @@
               </div>
 
 
-              <!-- GUESTS -->
+              
 
               <div>
 
@@ -529,7 +405,7 @@
               </div>
 
 
-              <!-- MESSAGE -->
+              
 
               <div class="sm:col-span-2">
 
@@ -554,7 +430,7 @@
             </div>
 
 
-            <!-- BUTTON -->
+            
 
             <button
               type="submit"
@@ -574,7 +450,7 @@
   </main>
 
 
-  <!-- FOOTER -->
+  
 
   <footer class="bg-espresso text-stone-200">
 
